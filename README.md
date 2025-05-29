@@ -111,8 +111,6 @@ int main()
     scanf("%d%d",&a,&b);
     c = add(a,b);
     d = sub(a,b);
-    printf("Addition: %d\n",c);
-    printf("Subtraction: %d",d);
 }
 int add(int x,int y)
 {
