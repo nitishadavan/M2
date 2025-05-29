@@ -118,13 +118,13 @@ int add(int x,int y)
 {
     int z;
     z = x + y;
-    return z;
+    printf("%d",z);
 }
 int sub(int x,int y)
 {
     int z;
     z = x - y;
-    return z;
+    printf("%d",z);
 }
 
 ```
