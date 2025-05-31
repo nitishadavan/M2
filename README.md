@@ -203,19 +203,26 @@ d.	After the loop, print the factorial value.
 
 ## PROGRAM:
 ```
-#include<stdio.h>
-int main()
-{
-    int n,fact=1;
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++)
-    {
-        fact*=i;
+#include <stdio.h>
+
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
     }
-    printf("Factorial value is: %d",fact);
-    return 0;
+    return fact;
 }
 
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    int result = factorial(n);
+    printf("Factorial value is: %d\n", result);
+
+    return 0;
+}
 ```
 
 
